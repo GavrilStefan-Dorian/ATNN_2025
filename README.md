@@ -139,7 +139,7 @@ In an attempt to mimick the CIFAR10 Speedrun technique, Muon was used with SGD M
 
 [muon_cos_final.py](muon_cos_final.py)
 
-Noteworthy: the reason SGD Momentum ( with and without Muon ) was NOT chosen as a submission was due to the rapid underfitting of the model, aswell as eventually stagnating around the 72% accuracy mark; considering the results achieved by other colleagues, I am still unsure what could be causing this, as even with the configs discussed by the others it would not improve; either this underfitting is correct, or the way in which validation accuracy was calculated on the validation set is incorrect.
+Noteworthy: the reason SGD Momentum ( with and without Muon ) was NOT chosen as a submission was due to the rapid underfitting of the model, aswell as eventually stagnating around the 72% accuracy mark; considering the results achieved by other colleagues, I am still unsure what could be causing this, as even with the configs discussed by the others it would not improve( even worse, accuracy would stay at single-digit % ); either this underfitting is correct, or the way in which validation accuracy was calculated on the validation set is incorrect.
 
 ![muon_sgd.png](muon_sgd.png)
 
