@@ -76,8 +76,10 @@ train_transforms_strong = v2.Compose([
     v2.Normalize(MEAN, STD, inplace=True)
 ])
 
-# Code snippet from (Version 14 multiple tests for muon,lr,augs) of the notebook. 
+# Code snippet from (Version 14 multiple tests for muon,lr,augs) of the notebook.
 ```
+(Version 14 Notebook)[https://www.kaggle.com/code/gavrilstefandorian/carn-hw2?scriptVersionId=271200529]
+
 
 Similarly, using AutoAugment with the SVHN Policy ( alongside lighter DA to balance it out ) had  a similar result, running for longer yet resulting in a lower accuracy value.
 
