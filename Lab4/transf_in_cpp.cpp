@@ -253,7 +253,7 @@ std::tuple<torch::Tensor, torch::Tensor> mixup(torch::Tensor images, torch::Tens
         }
     }
     
-    auto result_labels = torch::zeros({batch, num_classes}, torch::images.options());
+    auto result_labels = torch::zeros({batch, num_classes}, images.options());
     float* label_pixels = result_labels.data_ptr<float>();
     long* original_labels = labels.data_ptr<long>();
     
