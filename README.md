@@ -76,8 +76,10 @@ train_transforms_strong = v2.Compose([
     v2.Normalize(MEAN, STD, inplace=True)
 ])
 
-# Code snippet from (Version 14 multiple tests for muon,lr,augs) of the notebook. 
+# Code snippet from (Version 14 multiple tests for muon,lr,augs) of the notebook.
 ```
+(Version 14 Notebook)[https://www.kaggle.com/code/gavrilstefandorian/carn-hw2?scriptVersionId=271200529]
+
 
 Similarly, using AutoAugment with the SVHN Policy ( alongside lighter DA to balance it out ) had  a similar result, running for longer yet resulting in a lower accuracy value.
 
@@ -116,6 +118,11 @@ scheduler = optim.lr_scheduler.OneCycleLR(
 
 ![image.png](image%203.png)
 
+Most impressive is the ability of this configuration to reach ~74-75 % accuracy in as low as 12 minutes.
+
+![image.png](image%206.png)
+
+
 Using EMA provided rather small boosts in accuracy, yet due to no additional cost in runtime it was worth implementing for future experiments.
 
 ![image.png](image%204.png)
@@ -124,13 +131,15 @@ For the EMA definition:
 
 [ema_test.py](ema_test.py)
 
+## SGD Momentum Nesterov + Muon
+
 In an attempt to mimick the CIFAR10 Speedrun technique, Muon was used with SGD Momentum Nesterov, running slower than the OneCycleLR + AdamW configuration
 
 ![image.png](image%205.png)
 
 [muon_cos_final.py](muon_cos_final.py)
 
-Noteworthy: the reason SGD Momentum ( with and without Muon ) was NOT chosen as a submission was due to the rapid underfitting of the model, aswell as eventually stagnating around the 72% accuracy mark; considering the results achieved by other colleagues, either this underfitting is correct, or the way in which validation accuracy was calculated on the validation set is incorrect.
+Noteworthy: the reason SGD Momentum ( with and without Muon ) was NOT chosen as a submission was due to the rapid underfitting of the model, aswell as eventually stagnating around the 72% accuracy mark; considering the results achieved by other colleagues, I am still unsure what could be causing this, as even with the configs discussed by the others it would not improve( even worse, accuracy would stay at single-digit % ); either this underfitting is correct, or the way in which validation accuracy was calculated on the validation set is incorrect.
 
 ![muon_sgd.png](muon_sgd.png)
 
