@@ -3,9 +3,10 @@
 #include <cmath>
 #include <cstdlib>
 
-torch::Tensor to_image(torch::Tensor tensor) {
-    return tensor.to(torch::kFloat32);
-}
+// this is not used as there is no actual PIL->Tensor conv
+// torch::Tensor to_image(torch::Tensor tensor) {
+    // return tensor.to(torch::kFloat32); 
+// }
 
 torch::Tensor to_dtype(torch::Tensor tensor, torch::Dtype dtype, bool scale) {
     tensor = tensor.to(dtype);
@@ -210,7 +211,7 @@ std::tuple<torch::Tensor, torch::Tensor> cutmix(torch::Tensor images, torch::Ten
     }
     
     lambda = 1.0 - ((x2 - x1) * (y2 - y1)) / (double)(h * w);
-    auto result_labels = torch::zeros({batch, num_classes}, torch::kFloat32);
+    auto result_labels = torch::zeros({batch, num_classes}, images.options());
     float* label_pixels = result_labels.data_ptr<float>();
     long* original_labels = labels.data_ptr<long>();
     
@@ -252,7 +253,7 @@ std::tuple<torch::Tensor, torch::Tensor> mixup(torch::Tensor images, torch::Tens
         }
     }
     
-    auto result_labels = torch::zeros({batch, num_classes}, torch::kFloat32);
+    auto result_labels = torch::zeros({batch, num_classes}, torch::images.options());
     float* label_pixels = result_labels.data_ptr<float>();
     long* original_labels = labels.data_ptr<long>();
     
