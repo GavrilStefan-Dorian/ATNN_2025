@@ -291,7 +291,7 @@ std::tuple<torch::Tensor, torch::Tensor> random_choice_mix(torch::Tensor images,
 PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
     srand(time(NULL));
     
-    m.def("to_image", &to_image);
+    // m.def("to_image", &to_image);
     m.def("to_dtype", &to_dtype);
     m.def("normalize", &normalize);
     m.def("pad", &pad);
