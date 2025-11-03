@@ -13,7 +13,7 @@ setup(
     ext_modules=[
         CppExtension(
             "transf_in_cpp",
-            ["transf-in-cpp.cpp"],
+            ["transf_in_cpp.cpp"],
             extra_compile_args=get_extra_compile_args(),
         ),
     ],
