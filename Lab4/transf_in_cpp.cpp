@@ -2,6 +2,7 @@
 #include <vector>
 #include <cmath>
 #include <cstdlib>
+#include <ctime>
 
 torch::Tensor to_image(torch::Tensor tensor) {
     return tensor.to(torch::kFloat32);
@@ -195,6 +196,7 @@ std::tuple<torch::Tensor, torch::Tensor> cutmix(torch::Tensor images, torch::Ten
     
     auto result_images = images.clone();
     float* pixels = result_images.data_ptr<float>();
+    float* pixels_old = images.data_ptr<float>();
     
     for (int b = 0; b < batch; b++) {
         int shuffled_b = indices[b];
@@ -203,7 +205,7 @@ std::tuple<torch::Tensor, torch::Tensor> cutmix(torch::Tensor images, torch::Ten
                 for (int j = x1; j < x2; j++) {
                     int index = b * c * h * w + ch * h * w + i * w + j;
                     int index_old = shuffled_b * c * h * w + ch * h * w + i * w + j;
-                    pixels[index] = pixels[index_old];
+                    pixels[index] = pixels_old[index_old];
                 }
             }
         }
