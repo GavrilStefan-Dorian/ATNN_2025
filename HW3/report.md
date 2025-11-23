@@ -46,7 +46,7 @@ Specifically, with a minimal change to LR the accuracy jumped from 71.98 to 76.0
 
 Resnet18 is more stable but caps out a bit lower. It is also much faster, as to be expected due to fewer layers and params. 
 
-For Resnet50, ReduceLR yields better results, so this influenced the choice for the later config that targets 81% accuracy with no pretraining.
+For Resnet50, ReduceLR yields marginally better results.
 
 ![Sweep Charts of 8 configs](images/sweep_8_70.png)
 *Sweep Charts of 8 configs*
@@ -65,9 +65,8 @@ Picture above is also relevant to this topic: epoch_time ~60 seconds or below on
 
 GPU Usage stays high during training, which indicates efficiency.
 
-Below is an example of GPU Power Usage for the best run in the sweep of 8 configs.
+Below is an example of GPU Power Usage for the best run in the sweep of 8 configs.( \* only one of the GPUs on the platform was used )
 
-(\* only one of the GPUs on the platform was used )
 ![GPU Power Usage](images/gpu_power_usage.png)  
 *Best config of sweep GPU Power Usage*
 
@@ -122,9 +121,7 @@ The pipeline can be run in multiple ways:
 ## Score estimate
 
 My main concern is the Efficiency Criteria, as there may be different techniques which could have been employed yet were not.
-
 For example, I did not attempt to utilize both GPUs.
-
 The pipeline also could not make use of `torch.compile`: `Not enough SMs to use max_autotune_gemm mode`
 
 There may be other methods that I was unaware of or had forgotten to include.
