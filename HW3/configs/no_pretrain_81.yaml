@@ -45,6 +45,9 @@ parameters:
   use_batch_size_scheduler:
     value: false
 
+  use_compile: 
+    value: True
+
   use_heavy_aug:
     value: true
   

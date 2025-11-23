@@ -7,22 +7,22 @@ parameters:
     value: CIFAR100
 
   model:
-    value: resnet50
+    value: resnet18
 
   pretrained:
-    value: true
+    value: false
 
   lr:
-    values: [0.01]
+    value: 0.1
 
   optimizer:
     value: SGD
 
   scheduler:
-    value: ReduceLROnPlateau
+    value: StepLR
 
   epochs:
-    value: 100
+    value: 50
 
   weight_decay:
     value: 0.0005
@@ -34,13 +34,13 @@ parameters:
     value: true
 
   use_amp:
-    value: true
+    values: [false, true]
 
   use_wandb:
     value: true
 
   use_batch_size_scheduler:
-    value: false
-
-  use_compile: 
+    values: [false, true]
+  
+  use_compile:
     value: True

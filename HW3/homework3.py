@@ -97,9 +97,12 @@ def get_transforms(dataset, image_size, is_train=True, use_heavy_aug=False):
             v2.ToDtype(torch.float32, scale=True),
         ])
     
-    if dataset in ["CIFAR10", "CIFAR100"]:
-        mean = (0.5071, 0.4867, 0.4408)
-        std = (0.2675, 0.2565, 0.2761)
+    if dataset == "CIFAR10":
+        mean = (0.4914, 0.4822, 0.4465)
+        std = (0.2023, 0.1994, 0.2010)
+    elif dataset == "CIFAR100":
+        mean = (0.5071, 0.4865, 0.4409)
+        std = (0.2009, 0.1984, 0.2023)
     else:  # OxfordIIITPet
         mean = (0.485, 0.456, 0.406)
         std = (0.229, 0.224, 0.225)
@@ -411,6 +414,13 @@ def train_model(config):
                                                  use_heavy_aug=use_heavy_aug) 
     model = create_model(config["model"], config["dataset"], config["pretrained"], image_size)
     model.to(device)
+
+    if config.get("use_compile", False) and hasattr(torch, "compile"):
+        print("Compiliing is enabled")
+        try:
+            model = torch.compile(model)
+        except Exception as e:
+            print(f"Compiling failed: {e}.")
 
     # Note: now passes model instead of model.parameters() for layer-wise LR
     optimizer = create_optimizer(config["optimizer"], model, config["lr"], config["weight_decay"], config["pretrained"])
