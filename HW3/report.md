@@ -2,9 +2,9 @@
 ## Hyperparam sweep 70% Acc CIFAR-100
 
 The sweep was built to find out the effects of the chosen model, LR and scheduler on accuracy primarily.  
-This was done with the goal of finding the best 'base' config from which to achieve the 81% accuracy target later on.
+This was done with the goal of finding the best 'base' config(s) from which to achieve the higher accuracy targets later on.
 ### Configs
-Training Data Augmentations: RandomCrop, RandomHorizontalFlip, Normalization.
+Training Data Augmentations: RandomCrop, RandomHorizontalFlip, Normalization with CIFAR-100 Mean Std.
 
 TTA: Resizing, CenterCrop.
 
@@ -23,7 +23,7 @@ Constant config params:
 
 Varied config params:
 * model: resnet18, resnet50
-* lr: 0.1, 0.005
+* lr: 0.1, 0.05
 * scheduler: StepLR, ReduceLROnPlateau
 
 ### Results
@@ -63,12 +63,18 @@ Picture above is also relevant to this topic: epoch_time ~60 seconds or below on
 * torchvision.transforms for efficient transforms on GPU
 * minimal data augmentation by default: the sweep of 8 configs uses few and simple/cheap augmentations 
 
+Below is a comparison of the effects use_batch_scheduler and use_amp had on a test run.
+
+![RAM VRAM Runtime Charts](images/ram_vram_test.png)
+*RAM VRAM Runtime Charts*
+
 GPU Usage stays high during training, which indicates efficiency.
 
 Below is an example of GPU Power Usage for the best run in the sweep of 8 configs.( \* only one of the GPUs on the platform was used )
 
 ![GPU Power Usage](images/gpu_power_usage.png)  
 *Best config of sweep GPU Power Usage*
+
 
 ## No pretraining Vs Pretraining
 
@@ -94,7 +100,7 @@ The network is adapted for models with no pretraining by changing the first conv
 Pretrained models include Resizing. (256 to be larger than 224x224 ). This was done to mimic ImageNet's standard preprocessing, as per this [article](https://www.pinecone.io/learn/series/image-search/imagenet/), to make sure the data is compatible with pretrained weights.
 
 Additionally, pretrained models have ColorJitter and RandomErasing.  
-I did not attempt other configurations to achieve the desired accuracy in a more efficient timeframe. These latter heavy augmentations could potentially be removed as their usefulness is not certain, rather just an inspiration from another [experiment](https://dev.to/amirali_soltanirad/8435-on-cifar-100-with-resnet-50-4j4b). 
+I did not attempt other augmentations to achieve the desired accuracy in a more efficient timeframe. These latter heavy augmentations could potentially be removed as their usefulness is not certain, rather just an inspiration from another [experiment](https://dev.to/amirali_soltanirad/8435-on-cifar-100-with-resnet-50-4j4b). 
 
 
 
