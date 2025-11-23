@@ -99,7 +99,7 @@ I did not attempt other configurations to achieve the desired accuracy in a more
 
 
 ![Pretraining WANDB WANDB Charts](images/85_pre.png)
-*Pretraining WANDB WANDB Charts*
+*Pretraining WANDB Charts*
 
 ![Pretraining WANDB Summary](images/85_pre2.png)  
 *Pretraining WANDB Summary*
