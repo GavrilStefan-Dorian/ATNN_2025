@@ -1,0 +1,43 @@
+method: grid
+metric:
+  name: val_acc
+  goal: maximize
+parameters:
+  dataset:
+    value: CIFAR100
+
+  model:
+    values: ["resnet18", "resnet50"]
+
+  pretrained:
+    value: false
+
+  lr:
+    values: [0.1, 0.05]
+
+  optimizer:
+    value: SGD
+
+  scheduler:
+    values: ["StepLR", "ReduceLROnPlateau"]
+
+  epochs:
+    value: 200
+
+  weight_decay:
+    value: 0.0005
+
+  num_workers:
+    value: 2
+
+  pin_memory:
+    value: true
+
+  use_amp:
+    value: true
+
+  use_wandb:
+    value: true
+
+  use_batch_size_scheduler:
+    value: false
