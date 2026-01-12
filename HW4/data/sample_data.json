@@ -1,0 +1,725 @@
+{
+    "1": {
+        "homonym": "bugs",
+        "judged_meaning": "general term for any insect or similar creeping or crawling invertebrate",
+        "precontext": "Anna was having a tough week. Her room was a mess, and her computer kept crashing. Frustrated by everything going wrong, she called Jen.",
+        "sentence": "She asked her friend to help her get rid of the bugs.",
+        "ending": "They were crawling on the keyboard. Maybe that was the reason it didn't work.",
+        "choices": [
+            5,
+            5,
+            1,
+            2,
+            5
+        ],
+        "average": 3.6,
+        "stdev": 1.949358868961793,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "The garden was full of bugs."
+    },
+    "2": {
+        "homonym": "bugs",
+        "judged_meaning": "a fault or defect in a computer program, system, or machine",
+        "precontext": "Anna was having a tough week. Her room was a mess, and her computer kept crashing. Frustrated by everything going wrong, she called Jen.",
+        "sentence": "She asked her friend to help her get rid of the bugs.",
+        "ending": "They were crawling on the keyboard. Maybe that was the reason it didn't work.",
+        "choices": [
+            1,
+            1,
+            2,
+            1,
+            5
+        ],
+        "average": 2.0,
+        "stdev": 1.7320508075688772,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "There's a bug in the software."
+    },
+    "3": {
+        "homonym": "bugs",
+        "judged_meaning": "general term for any insect or similar creeping or crawling invertebrate",
+        "precontext": "Anna was having a tough week. Her room was a mess, and her computer kept crashing. Frustrated by everything going wrong, she called Jen.",
+        "sentence": "She asked her friend to help her get rid of the bugs.",
+        "ending": "Installing new antivirus software didn't do the trick.",
+        "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+        ],
+        "average": 1.0,
+        "stdev": 0.0,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "The garden was full of bugs."
+    },
+    "4": {
+        "homonym": "bugs",
+        "judged_meaning": "a fault or defect in a computer program, system, or machine",
+        "precontext": "Anna was having a tough week. Her room was a mess, and her computer kept crashing. Frustrated by everything going wrong, she called Jen.",
+        "sentence": "She asked her friend to help her get rid of the bugs.",
+        "ending": "Installing new antivirus software didn't do the trick.",
+        "choices": [
+            5,
+            5,
+            5,
+            5,
+            4
+        ],
+        "average": 4.8,
+        "stdev": 0.4472135954999579,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "There's a bug in the software."
+    },
+    "5": {
+        "homonym": "bugs",
+        "judged_meaning": "general term for any insect or similar creeping or crawling invertebrate",
+        "precontext": "Anna was having a tough week. Her room was a mess, and her computer kept crashing. Frustrated by everything going wrong, she called Jen.",
+        "sentence": "She asked her friend to help her get rid of the bugs.",
+        "ending": "",
+        "choices": [
+            2,
+            2,
+            2,
+            5,
+            1
+        ],
+        "average": 2.4,
+        "stdev": 1.51657508881031,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "The garden was full of bugs."
+    },
+    "6": {
+        "homonym": "bugs",
+        "judged_meaning": "a fault or defect in a computer program, system, or machine",
+        "precontext": "Anna was having a tough week. Her room was a mess, and her computer kept crashing. Frustrated by everything going wrong, she called Jen.",
+        "sentence": "She asked her friend to help her get rid of the bugs.",
+        "ending": "",
+        "choices": [
+            4,
+            5,
+            4,
+            5,
+            5
+        ],
+        "average": 4.6,
+        "stdev": 0.5477225575051661,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "There's a bug in the software."
+    },
+
+    "7": {
+        "homonym": "dummy",
+        "judged_meaning": "an ignorant or foolish person",
+        "precontext": "Tom was wandering through the crowded department store. He couldn't resist touching the lifelike mannequins on display. Distracted by their presence, he stumbled unexpectedly.",
+        "sentence": "He felt like a dummy after tripping and falling on the floor.",
+        "ending": "Several customers snickered at him as he picked himself up.",
+        "choices": [
+            5,
+            3,
+            4,
+            4,
+            5
+        ],
+        "average": 4.2,
+        "stdev": 0.8366600265340756,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "Don't be a dummy; think carefully."
+    },
+    "8": {
+        "homonym": "dummy",
+        "judged_meaning": "a figure representing the human form",
+        "precontext": "Tom was wandering through the crowded department store. He couldn't resist touching the lifelike mannequins on display. Distracted by their presence, he stumbled unexpectedly.",
+        "sentence": "He felt like a dummy after tripping and falling on the floor.",
+        "ending": "Several customers snickered at him as he picked himself up.",
+        "choices": [
+            1,
+            1,
+            1,
+            3,
+            1
+        ],
+        "average": 1.4,
+        "stdev": 0.8944271909999159,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "The artist used a dummy for reference."
+    },
+    "9": {
+        "homonym": "dummy",
+        "judged_meaning": "an ignorant or foolish person",
+        "precontext": "Tom was wandering through the crowded department store. He couldn't resist touching the lifelike mannequins on display. Distracted by their presence, he stumbled unexpectedly.",
+        "sentence": "He felt like a dummy after tripping and falling on the floor.",
+        "ending": "Lamenting his own stupidity, he touched one more mannequin and left.",
+        "choices": [
+            5,
+            5,
+            5,
+            5,
+            5
+        ],
+        "average": 5.0,
+        "stdev": 0.0,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "Don't be a dummy; think carefully."
+    },
+    "10": {
+        "homonym": "dummy",
+        "judged_meaning": "a figure representing the human form",
+        "precontext": "Tom was wandering through the crowded department store. He couldn't resist touching the lifelike mannequins on display. Distracted by their presence, he stumbled unexpectedly.",
+        "sentence": "He felt like a dummy after tripping and falling on the floor.",
+        "ending": "Lamenting his own stupidity, he touched one more mannequin and left.",
+        "choices": [
+            5,
+            1,
+            3,
+            2,
+            1
+        ],
+        "average": 2.4,
+        "stdev": 1.6733200530681511,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "The artist used a dummy for reference."
+    },
+    "11": {
+        "homonym": "dummy",
+        "judged_meaning": "an ignorant or foolish person",
+        "precontext": "Tom was wandering through the crowded department store. He couldn't resist touching the lifelike mannequins on display. Distracted by their presence, he stumbled unexpectedly.",
+        "sentence": "He felt like a dummy after tripping and falling on the floor.",
+        "ending": "",
+        "choices": [
+            5,
+            3,
+            5,
+            5,
+            5
+        ],
+        "average": 4.6,
+        "stdev": 0.8944271909999159,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "Don't be a dummy; think carefully."
+    },
+    "12": {
+        "homonym": "dummy",
+        "judged_meaning": "a figure representing the human form",
+        "precontext": "Tom was wandering through the crowded department store. He couldn't resist touching the lifelike mannequins on display. Distracted by their presence, he stumbled unexpectedly.",
+        "sentence": "He felt like a dummy after tripping and falling on the floor.",
+        "ending": "",
+        "choices": [
+            1,
+            1,
+            2,
+            2,
+            4
+        ],
+        "average": 2.0,
+        "stdev": 1.224744871391589,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "The artist used a dummy for reference."
+    },
+    "13": {
+        "homonym": "cut",
+        "judged_meaning": "shorten as if by severing the edges or ends of",
+        "precontext": "Jake stared at the overgrown hedge, wondering where to start. He had never tackled a job like this before. The thought of finishing it seemed overwhelming.",
+        "sentence": "He just didn't quite know if he could cut it.",
+        "ending": "The roots were far too thick.",
+        "choices": [
+            5,
+            5,
+            4,
+            4,
+            5
+        ],
+        "average": 4.6,
+        "stdev": 0.5477225575051661,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "She decided to cut her hair."
+    },
+    "14": {
+        "homonym": "cut",
+        "judged_meaning": "be able to manage or manage successfully",
+        "precontext": "Jake stared at the overgrown hedge, wondering where to start. He had never tackled a job like this before. The thought of finishing it seemed overwhelming.",
+        "sentence": "He just didn't quite know if he could cut it.",
+        "ending": "The roots were far too thick.",
+        "choices": [
+            1,
+            3,
+            2,
+            2,
+            1
+        ],
+        "average": 1.8,
+        "stdev": 0.8366600265340756,
+        "nonsensical": [
+            true,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "She can't cut it in this job."
+    },
+    "15": {
+        "homonym": "cut",
+        "judged_meaning": "shorten as if by severing the edges or ends of",
+        "precontext": "Jake stared at the overgrown hedge, wondering where to start. He had never tackled a job like this before. The thought of finishing it seemed overwhelming.",
+        "sentence": "He just didn't quite know if he could cut it.",
+        "ending": "Luckily, he knew his friend was off work, so he called him, and they both soon had the hedge in top shape.",
+        "choices": [
+            5,
+            4,
+            4,
+            4,
+            4
+        ],
+        "average": 4.2,
+        "stdev": 0.4472135954999579,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "She decided to cut her hair."
+    },
+    "16": {
+        "homonym": "cut",
+        "judged_meaning": "be able to manage or manage successfully",
+        "precontext": "Jake stared at the overgrown hedge, wondering where to start. He had never tackled a job like this before. The thought of finishing it seemed overwhelming.",
+        "sentence": "He just didn't quite know if he could cut it.",
+        "ending": "Luckily, he knew his friend was off work, so he called him, and they both soon had the hedge in top shape.",
+        "choices": [
+            3,
+            2,
+            4,
+            2,
+            5
+        ],
+        "average": 3.2,
+        "stdev": 1.3038404810405297,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "She can't cut it in this job."
+    },
+    "17": {
+        "homonym": "cut",
+        "judged_meaning": "shorten as if by severing the edges or ends of",
+        "precontext": "Jake stared at the overgrown hedge, wondering where to start. He had never tackled a job like this before. The thought of finishing it seemed overwhelming.",
+        "sentence": "He just didn't quite know if he could cut it.",
+        "ending": "",
+        "choices": [
+            3,
+            5,
+            4,
+            3,
+            5
+        ],
+        "average": 4.0,
+        "stdev": 1.0,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "She decided to cut her hair."
+    },
+    "18": {
+        "homonym": "cut",
+        "judged_meaning": "be able to manage or manage successfully",
+        "precontext": "Jake stared at the overgrown hedge, wondering where to start. He had never tackled a job like this before. The thought of finishing it seemed overwhelming.",
+        "sentence": "He just didn't quite know if he could cut it.",
+        "ending": "",
+        "choices": [
+            2,
+            3,
+            5,
+            3,
+            4
+        ],
+        "average": 3.4,
+        "stdev": 1.140175425099138,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "She can't cut it in this job."
+    },
+
+    "19": {
+        "homonym": "snapped",
+        "judged_meaning": "utter in an angry, sharp, or abrupt tone",
+        "precontext": "The park was bustling with activity. Emily was there to document the annual fair with her camera. She grew frustrated as the crowd kept blocking her view.",
+        "sentence": "She snapped at him while taking a photo of the event.",
+        "ending": "Although Emily had become angry with people obscuring her view, she did manage to get the perfect shot.",
+        "choices": [
+            5,
+            5,
+            5,
+            5,
+            4
+        ],
+        "average": 4.8,
+        "stdev": 0.4472135954999579,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "\"She snapped at him unexpectedly.\""
+    },
+    "20": {
+        "homonym": "snapped",
+        "judged_meaning": "record on photographic film",
+        "precontext": "The park was bustling with activity. Emily was there to document the annual fair with her camera. She grew frustrated as the crowd kept blocking her view.",
+        "sentence": "She snapped at him while taking a photo of the event.",
+        "ending": "Although Emily had become angry with people obscuring her view, she did manage to get the perfect shot.",
+        "choices": [
+            2,
+            3,
+            1,
+            1,
+            2
+        ],
+        "average": 1.8,
+        "stdev": 0.8366600265340756,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "I took a quick snap of the sunset."
+    },
+    "21": {
+        "homonym": "snapped",
+        "judged_meaning": "utter in an angry, sharp, or abrupt tone",
+        "precontext": "The park was bustling with activity. Emily was there to document the annual fair with her camera. She grew frustrated as the crowd kept blocking her view.",
+        "sentence": "She snapped at him while taking a photo of the event.",
+        "ending": "She then took a few more shots of the crowd as they moved out of her way.",
+        "choices": [
+            4,
+            4,
+            4,
+            4,
+            5
+        ],
+        "average": 4.2,
+        "stdev": 0.4472135954999579,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "\"She snapped at him unexpectedly.\""
+    },
+    "22": {
+        "homonym": "snapped",
+        "judged_meaning": "record on photographic film",
+        "precontext": "The park was bustling with activity. Emily was there to document the annual fair with her camera. She grew frustrated as the crowd kept blocking her view.",
+        "sentence": "She snapped at him while taking a photo of the event.",
+        "ending": "She then took a few more shots of the crowd as they moved out of her way.",
+        "choices": [
+            5,
+            1,
+            3,
+            1,
+            1
+        ],
+        "average": 2.2,
+        "stdev": 1.7888543819998317,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "I took a quick snap of the sunset."
+    },
+    "23": {
+        "homonym": "snapped",
+        "judged_meaning": "utter in an angry, sharp, or abrupt tone",
+        "precontext": "The park was bustling with activity. Emily was there to document the annual fair with her camera. She grew frustrated as the crowd kept blocking her view.",
+        "sentence": "She snapped at him while taking a photo of the event.",
+        "ending": "",
+        "choices": [
+            5,
+            5,
+            5,
+            4,
+            4
+        ],
+        "average": 4.6,
+        "stdev": 0.5477225575051661,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "\"She snapped at him unexpectedly.\""
+    },
+    "24": {
+        "homonym": "snapped",
+        "judged_meaning": "record on photographic film",
+        "precontext": "The park was bustling with activity. Emily was there to document the annual fair with her camera. She grew frustrated as the crowd kept blocking her view.",
+        "sentence": "She snapped at him while taking a photo of the event.",
+        "ending": "",
+        "choices": [
+            1,
+            2,
+            1,
+            2,
+            2
+        ],
+        "average": 1.6,
+        "stdev": 0.5477225575051661,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "I took a quick snap of the sunset."
+    },
+
+    "25": {
+        "homonym": "signs",
+        "judged_meaning": "a perceptible indication of something not immediately apparent (as a visible clue that something has happened)",
+        "precontext": "Anna walked down the street, feeling uneasy after the long day. She kept looking around, searching for something to ease her mind. Her thoughts raced, wondering if she'd find what she needed.",
+        "sentence": "When she sees the signs, she will feel better.",
+        "ending": "The trees were in bud; soon, spring would be here.",
+        "choices": [
+            5,
+            3,
+            2,
+            5,
+            4
+        ],
+        "average": 3.8,
+        "stdev": 1.3038404810405297,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "She showed signs of improvement today."
+    },
+    "26": {
+        "homonym": "signs",
+        "judged_meaning": "structure displaying a board on which advertisements can be posted",
+        "precontext": "Anna walked down the street, feeling uneasy after the long day. She kept looking around, searching for something to ease her mind. Her thoughts raced, wondering if she'd find what she needed.",
+        "sentence": "When she sees the signs, she will feel better.",
+        "ending": "The trees were in bud; soon, spring would be here.",
+        "choices": [
+            1,
+            3,
+            2,
+            4,
+            3
+        ],
+        "average": 2.6,
+        "stdev": 1.140175425099138,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "The road was filled with colorful signs."
+    },
+    "27": {
+        "homonym": "signs",
+        "judged_meaning": "a perceptible indication of something not immediately apparent (as a visible clue that something has happened)",
+        "precontext": "Anna walked down the street, feeling uneasy after the long day. She kept looking around, searching for something to ease her mind. Her thoughts raced, wondering if she'd find what she needed.",
+        "sentence": "When she sees the signs, she will feel better.",
+        "ending": "Her mood lifted as she passed a row of bright billboards and posters lining the streets.",
+        "choices": [
+            5,
+            3,
+            2,
+            2,
+            4
+        ],
+        "average": 3.2,
+        "stdev": 1.3038404810405297,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "She showed signs of improvement today."
+    },
+    "28": {
+        "homonym": "signs",
+        "judged_meaning": "structure displaying a board on which advertisements can be posted",
+        "precontext": "Anna walked down the street, feeling uneasy after the long day. She kept looking around, searching for something to ease her mind. Her thoughts raced, wondering if she'd find what she needed.",
+        "sentence": "When she sees the signs, she will feel better.",
+        "ending": "Her mood lifted as she passed a row of bright billboards and posters lining the streets.",
+        "choices": [
+            5,
+            4,
+            5,
+            1,
+            5
+        ],
+        "average": 4.0,
+        "stdev": 1.7320508075688772,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "The road was filled with colorful signs."
+    },
+    "29": {
+        "homonym": "signs",
+        "judged_meaning": "a perceptible indication of something not immediately apparent (as a visible clue that something has happened)",
+        "precontext": "Anna walked down the street, feeling uneasy after the long day. She kept looking around, searching for something to ease her mind. Her thoughts raced, wondering if she'd find what she needed.",
+        "sentence": "When she sees the signs, she will feel better.",
+        "ending": "",
+        "choices": [
+            4,
+            2,
+            4,
+            3,
+            4
+        ],
+        "average": 3.4,
+        "stdev": 0.8944271909999159,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "She showed signs of improvement today."
+    },
+    "30": {
+        "homonym": "signs",
+        "judged_meaning": "structure displaying a board on which advertisements can be posted",
+        "precontext": "Anna walked down the street, feeling uneasy after the long day. She kept looking around, searching for something to ease her mind. Her thoughts raced, wondering if she'd find what she needed.",
+        "sentence": "When she sees the signs, she will feel better.",
+        "ending": "",
+        "choices": [
+            4,
+            1,
+            3,
+            3,
+            4
+        ],
+        "average": 3.0,
+        "stdev": 1.224744871391589,
+        "nonsensical": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "example_sentence": "The road was filled with colorful signs."
+    }
+}
